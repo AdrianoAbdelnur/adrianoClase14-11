@@ -1,0 +1,4 @@
+.home_container {
+    background-color: green;
+    height: calc(100vh - 6rem);
+}
