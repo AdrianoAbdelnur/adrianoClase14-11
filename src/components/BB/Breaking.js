@@ -27,8 +27,6 @@ const Breaking = ({ cont, setCont }) => {
     } catch (error) {
       alert('Episodes not found');
     }
-    
-   
     setCont(1)
   }
 
@@ -39,10 +37,6 @@ const Breaking = ({ cont, setCont }) => {
     }
   }, [cont, episodes, characters])
 
-  useEffect(() => {
-    console.log(personajes)
-  }, [personajes])
-
 
   const findcharacters = () => {
     if (cont > 0) {
@@ -50,11 +44,7 @@ const Breaking = ({ cont, setCont }) => {
       for (const char of episodes[cont - 1]?.characters) {
         for (const personaje of characters) {
           if (personaje.name === char) {
-            /*       console.log(personaje.name+ ' Personaje')
-                  console.log(char + ' en el capitulo')
-                  console.log(personaje) */
-            /* setPersonajes([...personajes, personaje]) */
-            seteoPersonajes.push(personaje)
+              seteoPersonajes.push(personaje)
           }
         }
       }
