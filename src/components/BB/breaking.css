@@ -1,0 +1,19 @@
+.Breaking_container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin: 1rem;
+}
+
+.card li {
+    text-align: start;
+}
+
+.card img {
+    max-height: 18rem;;
+}
+
+

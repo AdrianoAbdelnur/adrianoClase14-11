@@ -1,4 +1,5 @@
 .home_container {
     background-color: green;
-    height: calc(100vh - 6rem);
+    height: calc(100vh - 7rem);
+    overflow: auto;
 }

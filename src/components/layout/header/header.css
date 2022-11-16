@@ -1,4 +1,11 @@
 .header_container {
-    background-color: yellow;
-    height: 3rem;
+    background-color: yellowgreen;
+    height: 4rem;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.header_container > Button {
+    margin: .5rem;
+    height:fit-content;
 }
