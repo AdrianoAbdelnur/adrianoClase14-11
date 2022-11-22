@@ -1,0 +1,42 @@
+.details_container {
+    background-color: gray;
+    height: calc(100vh - 8rem);;
+    overflow: auto;
+}
+
+.info_container {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+}
+
+.characterImg {
+    height: 60vh;
+}
+
+.info_container > div {
+    font-size: large;
+    margin-left: 3rem;
+    text-align: start;
+}
+
+.comments_container{
+    width: calc(40vw + 3.6rem);
+    height: 15vh;
+    overflow: auto;
+    background-color: rgb(206, 199, 199);
+    margin-bottom: 1rem;
+    font-size: medium
+}
+
+
+.inputComment {
+    width: 40vw;
+    height: 20vh;
+    overflow: auto;
+}
+
+.commentForm {
+    display: flex;
+    flex-direction: row;
+}

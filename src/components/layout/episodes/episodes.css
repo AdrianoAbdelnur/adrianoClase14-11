@@ -1,0 +1,5 @@
+.episodes_container {
+        background-color: gray;
+        height: calc(100vh - 8rem);
+        overflow: auto;
+}

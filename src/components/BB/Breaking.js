@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { useState, useEffect } from 'react'
-import { Card, ListGroup } from 'react-bootstrap';
+import { Card, Spinner} from 'react-bootstrap';
 import './breaking.css'
 
 const Breaking = ({ cont, setCont }) => {
@@ -37,7 +37,6 @@ const Breaking = ({ cont, setCont }) => {
     }
   }, [cont, episodes, characters])
 
-
   const findcharacters = () => {
     if (cont > 0) {
       const seteoPersonajes = [];
@@ -51,6 +50,7 @@ const Breaking = ({ cont, setCont }) => {
       setPersonajes(seteoPersonajes)
     }
   }
+
   return (
     <div className='Breaking_container'>
       {
@@ -72,7 +72,7 @@ const Breaking = ({ cont, setCont }) => {
           </Card>
         ))
           ) : (
-                <>LOADING...</>
+            <Spinner className='spinnerLoading' animation="border" variant="success" />      
           )
       }
     </div>

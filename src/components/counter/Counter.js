@@ -3,10 +3,8 @@ import { useEffect, useState } from 'react'
 import { Button } from 'react-bootstrap'
 import './counter.css'
 
-const Counter = ({cont, setCont}) => {
-     
-
-    useEffect(() => {
+    const Counter = ({cont, setCont}) => {
+        useEffect(() => {
         validadorpositivo();
     }, [cont])
 
@@ -17,11 +15,10 @@ const Counter = ({cont, setCont}) => {
     }    
     
     return (
-        <div className='counter_Container' >
-            {/* <h4>Episode {cont}</h4> */}
-            <Button variant='secondary' onClick={() => setCont(cont-1)}>Previous </Button>
-            <Button variant='secondary' onClick={() => setCont(cont+1)}>Next </Button>
-            <Button variant='danger' onClick={() => setCont(1)}>Restart</Button>
+        <div className='counter_Container'>
+            <Button variant="success" onClick={() => setCont(cont-1)}>{'<'} Prev </Button>
+            <Button variant='success' onClick={() => setCont(cont+1)}>Next {'>'}</Button>
+            <Button variant='secondary' onClick={() => setCont(1)}>Restart</Button>
         </div>  
     )
 }

@@ -1,4 +1,5 @@
 .footer_container {
-    background-color: yellowgreen;
+    background-color: rgb(34, 77, 34);
     height: 3rem;
+    color: white;
 }

@@ -1,5 +1,35 @@
 .home_container {
-    background-color: green;
-    height: calc(100vh - 7rem);
+    background-color: gray;
+    height: calc(100vh - 8rem);
     overflow: auto;
+}
+
+.charactersCards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin: 1rem;
+}
+
+.cardHome :hover {
+    cursor: pointer;
+}
+
+.card li {
+    text-align: start;
+}
+
+.card img {
+    max-height: 18rem;;
+}
+
+.spinnerLoading {
+    height: 70px !important;
+    width: 70px !important;
+
+    border: 10px solid currentColor !important;
+    border-right-color: transparent !important;
 }

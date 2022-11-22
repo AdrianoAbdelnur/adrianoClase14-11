@@ -1,0 +1,12 @@
+.register_containar {
+    background-color: rgb(69, 68, 68);
+    height: calc(100vh - 8rem);
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.register_containar > div {
+    height: 80%;
+    width: 80%;
+}

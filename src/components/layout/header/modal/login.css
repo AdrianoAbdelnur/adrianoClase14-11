@@ -3,6 +3,6 @@
     flex-direction: column;
 }
 
-.container > div {
+.form_container > div {
     margin: .5rem;
 }

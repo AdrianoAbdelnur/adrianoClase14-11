@@ -1,11 +1,33 @@
 .header_container {
-    background-color: yellowgreen;
-    height: 4rem;
-    display: flex;
-    flex-direction: row-reverse;
+    background-color: rgb(34, 77, 34);
+    height: 5rem;
 }
 
-.header_container > Button {
-    margin: .5rem;
-    height:fit-content;
+.links_container {
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.user {
+    margin-right: 2 rem;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+}
+
+.user h5{
+    margin-right: 1rem;
+    color: white;
+}
+
+.userLoginButton{
+    margin: 1rem;
+    height: fit-content;
+}
+
+.logo {
+    height: 5rem;
+    margin-left: 1rem;
 }
