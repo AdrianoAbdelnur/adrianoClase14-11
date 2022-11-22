@@ -15,7 +15,6 @@ const Details = () => {
     const sendComment = (e) => {
         e.preventDefault();
         const commentary = '('+ todayDate() + ') ' +user.nombre + ' said: ' +  e.target[0].value;
-        console.log(comments.length)
         if (comments.length === 0) {
             setComements([commentary])
         } else {
@@ -36,7 +35,6 @@ const Details = () => {
     const todayDate = () => {
         let today = new Date(),
         date = (today.getMonth() + 1) + '/' + today.getDate() + '/' + today.getFullYear()+'-' +today.getHours()+ ':' + today.getMinutes();
-        console.log(date)
         return date;
     }
 
