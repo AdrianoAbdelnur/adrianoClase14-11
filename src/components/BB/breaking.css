@@ -19,7 +19,6 @@
 .spinnerLoading {
     height: 70px !important;
     width: 70px !important;
-
     border: 10px solid currentColor !important;
     border-right-color: transparent !important;
 }

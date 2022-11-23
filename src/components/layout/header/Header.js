@@ -10,6 +10,7 @@ const Header = () => {
     const [users, setUsers] = useState([1])
     const [usuario, setUsuario] = useState({})
     const [login, setLogin] = useState()
+    
     let navigate = useNavigate()
     const admin = [{
         'nombre':'admin',
@@ -18,6 +19,9 @@ const Header = () => {
         'tipo':'admin',
     }   
     ];
+
+  
+    
 
     useEffect(() => {
         const local = (JSON.parse(localStorage.getItem("users")));
@@ -34,10 +38,10 @@ const Header = () => {
         if (usuario) {
             return <div className='user'>
                 <img className='logo' src={Brand}></img>
-                <div className='links_container'>
-                    <Link to='home'>Home</Link>
-                    <Link to='episodes'>Characters by episodes</Link>
-                </div>
+                    <div className='links_container'>
+                        <Link to='home'>Home</Link>
+                        <Link to='episodes'>Characters by episodes</Link>
+                    </div>
                 <div>
                     <h5>User : {usuario.nombre}</h5> 
                     <Button variant='secondary' onClick={singOut}>Sing out</Button>

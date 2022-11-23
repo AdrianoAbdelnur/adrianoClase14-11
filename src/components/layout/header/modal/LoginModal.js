@@ -30,7 +30,7 @@ return (
                 <div>
                     <Row>
                         <Col sm={3}>
-                            <label id='nombre'>Nombre:</label>
+                            <label id='nombre'>Name:</label>
                         </Col>
                         <Col sm={9}>
                             <input className='w-100' name='nombre'></input>
@@ -40,7 +40,7 @@ return (
                 <div>
                     <Row>
                         <Col sm={3}>
-                            <label id='password'>Contraseña:</label>
+                            <label id='password'>Password:</label>
                         </Col>
                         <Col sm={9}>
                             <input className='w-100' name='password'></input>
