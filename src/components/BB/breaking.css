@@ -1,0 +1,25 @@
+.Breaking_container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin: 1rem;
+}
+
+.card li {
+    text-align: start;
+}
+
+.card img {
+    max-height: 18rem;;
+}
+
+.spinnerLoading {
+    height: 70px !important;
+    width: 70px !important;
+    border: 10px solid currentColor !important;
+    border-right-color: transparent !important;
+}
+

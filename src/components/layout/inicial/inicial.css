@@ -1,0 +1,12 @@
+.inicial_container {
+    background-color: rgb(69, 68, 68);
+    height: calc(100vh - 8rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inicial_container :first-child {
+    height: 90%;
+    max-width: 90%;
+}
